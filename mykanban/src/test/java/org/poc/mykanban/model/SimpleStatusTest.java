@@ -6,7 +6,7 @@ public class SimpleStatusTest implements Status {
 	
 	private String statusName;
 
-	// implementation from interface
+	// Interface implementation
 	public Integer getStatusId() {
 		return statusId;
 	}
@@ -19,6 +19,10 @@ public class SimpleStatusTest implements Status {
 	public SimpleStatusTest(final Integer statusId, final String statusName) {
 		this.statusId = statusId;
 		this.statusName = statusName;
+	}
+
+	public void setStatusName(final String name) {
+		this.statusName = name;
 	}
 	
 }
