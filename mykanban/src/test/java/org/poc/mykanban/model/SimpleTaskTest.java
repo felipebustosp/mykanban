@@ -32,4 +32,16 @@ public class SimpleTaskTest implements Task {
 		return status;
 	}
 
+	public void updateStatus(Status prevStatus, Status nextStatus) {
+		if (prevStatus != nextStatus){
+			this.status = nextStatus;
+		}
+	}
+
+	public void updateAsignee(User currAssignee, User newAsignee) {
+		if (currAssignee != newAsignee){
+			this.asignee = newAsignee;
+		}
+	}
+
 }

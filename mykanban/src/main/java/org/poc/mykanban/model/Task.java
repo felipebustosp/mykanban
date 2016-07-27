@@ -12,5 +12,9 @@ public interface Task {
 	
 	public Status getStatus();
 	
+	public void updateStatus(final Status prevStatus, final Status nextStatus);
+	
+	public void updateAsignee(final User currAssignee, final User newAsignee);
+	
 
 }
